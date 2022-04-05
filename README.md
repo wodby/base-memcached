@@ -3,7 +3,6 @@
 [![Build Status](https://github.com/wodby/base-memcached/workflows/Build%20docker%20image/badge.svg)](https://github.com/wodby/base-memcached/actions)
 [![Docker Pulls](https://img.shields.io/docker/pulls/wodby/base-memcached.svg)](https://hub.docker.com/r/wodby/base-memcached)
 [![Docker Stars](https://img.shields.io/docker/stars/wodby/base-memcached.svg)](https://hub.docker.com/r/wodby/base-memcached)
-[![Docker Layers](https://images.microbadger.com/badges/image/wodby/base-memcached.svg)](https://microbadger.com/images/wodby/base-memcached)
 
 This repository is a fork of https://github.com/docker-library/memcached with a few changes:
 
