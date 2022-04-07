@@ -12,7 +12,6 @@ fullVersion=$(grep -oP '(?<=^ENV MEMCACHED_VERSION )([0-9\.]+)' alpine/Dockerfil
 minorVersion=$(echo "${fullVersion}" | grep -oE '^[0-9]+\.[0-9]+')
 
 # Update workflows.
-sed -i -E "s/(version): '${minorVersion//\./\\.}\.[0-9]+'/\1: '${fullVersion}'/" .github/workflows/workflow.yml
-sed -i -E "s/(tags): ${minorVersion//\./\\.}\.[0-9]+/\1: ${fullVersion}/" .github/workflows/workflow.yml
+sed -i -E "s/(MEMCACHED${minorVersion//\./}): '${minorVersion//\./\\.}\.[0-9]+'/\1: '${fullVersion}'/" .github/workflows/workflow.yml
 # Update README.
-sed -i -E "s/\`${minorVersion//\./\\.}\.[0-9]+\`/\`${fullVersion}\`/" README.md
+sed -i -E "s/\`${minorVersion//\./\\.}\.[0-9]+\`/\`${fullVersion}\`/g" README.md

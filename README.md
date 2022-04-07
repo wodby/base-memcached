@@ -17,7 +17,7 @@ This repository is a fork of https://github.com/docker-library/memcached with a 
 
 Supported tags and respective `Dockerfile` links:
 
-* `1.6.15`, `1`, `latest` [_(Dockerfile)_](https://github.com/wodby/base-memcached/tree/master/2.4/alpine/Dockerfile.wodby)
+* `1.6.15-alpine3.15`, `1-alpine3.15`, `1.6.15`, `1`, `alpine3.15`, `latest` [_(Dockerfile)_](https://github.com/wodby/base-memcached/tree/master/2.4/alpine/Dockerfile.wodby)
 * `1.6.15-alpine3.13`, `1-alpine3.13`, `alpine3.13` [_(Dockerfile)_](https://github.com/wodby/base-memcached/tree/master/2.4/alpine/Dockerfile.wodby)
 
 All images built for `linux/amd64` and `linux/arm64`
